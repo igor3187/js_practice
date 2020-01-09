@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{background: skyblue; font-family: Verdana,serif; color: white; padding: 30px;}
+        h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+        h2{font-size: 30px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+        p, li{font-size: 16px; text-align: center;}
+    </style>
+    <title>Profile</title>
+</head>
+<body>
+<%- include('partials/nav'); %>
+<h1>Welcome to the profile of <%= person%></h1>
+<p><strong>Age: </strong><%= data.age %></p>
+<p><strong>Job: </strong><%= data.job %></p>
+<h2>Hobbies</h2>
+<ul>
+    <% data.hobbies.forEach(function (item) { %>
+        <li><%= item %></li>
+    <% }); %>
+</ul>
+</body>
+</html>
+
