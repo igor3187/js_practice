@@ -5,7 +5,7 @@ const app = express();
 
 app.use('/assets', express.static('assets'));
 
-app.get('/index', (req, res) => res.sendFile(__dirname + '/index.js'));
+app.get('/index', (req, res) => res.sendFile(__dirname + '/app.js'));
 
 app.get('/', (req, res) => res.sendFile(__dirname + '/index1.html'));
 

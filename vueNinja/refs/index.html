@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="vue-app">
+    <h2>Refs</h2>
+    <input type="text" ref="input">
+    <button @click="readRefs">Submit</button>
+    <p>Your fav food: {{output}}</p>
+    <div ref="test">hello</div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -6,7 +6,8 @@ const mongoose = require('mongoose');
 const app = express();
 
 //connect to mongodb
-mongoose.connect('mongodb://localhost/ninjago');
+mongoose.connect('mongodb://localhost/ninjago', { useNewUrlParser: true, useUnifiedTopology: true });
+
 mongoose.Promise = global.Promise;
 
 app.use(express.static('public'));
@@ -24,5 +25,5 @@ app.use(function (err, req, res, next) {
 
 //listen for requests
 app.listen(process.env.port || 4000, function () {
-    console.log('now listening for request');
+    console.log('now listening for request on PORT 4000');
 });

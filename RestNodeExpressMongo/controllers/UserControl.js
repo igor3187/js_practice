@@ -5,10 +5,10 @@ module.exports = {
         let user = new UserModel({
             forename: req.body.forename,
             surname: req.body.surname,
-            email: req.body.email,
-            password: req.body.password,
-            age: req.body.age,
-            team: req.body.team
+            // email: req.body.email,
+            // password: req.body.password,
+            // age: req.body.age,
+            // team: req.body.team
         });
 
         user.save()

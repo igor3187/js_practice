@@ -4,7 +4,7 @@ const app = express();
 
 //create database
 mongoose.Promise = global.Promise;
-mongoose.createConnection('mongodb://127.0.0.1:27017/user-manager',  { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.createConnection('mongodb://127.0.0.1:27017/ninjas',  { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('DB is connected..'))
     .catch(err => console.log(err));
 
